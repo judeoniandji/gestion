@@ -1,0 +1,23 @@
+@model IEnumerable<SchoolManagementSystem.Models.Absence>
+
+<h2>Liste des Absences</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Date de l'absence</th>
+            <th>Étudiant</th>
+            <th>Cours</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var absence in Model)
+        {
+            <tr>
+                <td>@absence.DateAbsence</td>
+                <td>@absence.Etudiant.Prenom @absence.Etudiant.Nom</td>
+                <td>@absence.Cours.Libelle</td>
+            </tr>
+        }
+    </tbody>
+</table>

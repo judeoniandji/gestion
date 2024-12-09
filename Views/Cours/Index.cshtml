@@ -1,0 +1,32 @@
+@model IEnumerable<SchoolManagementSystem.Models.Cours>
+
+<h2>Liste des Cours</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Libellé</th>
+            <th>Professeur</th>
+            <th>Classes</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var cours in Model)
+        {
+            <tr>
+                <td>@cours.Libelle</td>
+                <td>@cours.Professeur.Nom @cours.Professeur.Prenom</td>
+                <td>
+                    @foreach (var classe in cours.ClasseCours)
+                    {
+                        <span>@classe.Classe.Libelle </span>
+                    }
+                </td>
+                <td>
+                    <a href="@Url.Action("Absences", "Cours", new { id = cours.CoursID })">Voir les absences</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,4 @@
+C:\Users\KURTIS\GestionEcole\obj\Debug\net6.0\GestionEcole.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KURTIS\GestionEcole\obj\Debug\net6.0\GestionEcole.AssemblyInfoInputs.cache
+C:\Users\KURTIS\GestionEcole\obj\Debug\net6.0\GestionEcole.AssemblyInfo.cs
+C:\Users\KURTIS\GestionEcole\obj\Debug\net6.0\GestionEcole.csproj.CoreCompileInputs.cache

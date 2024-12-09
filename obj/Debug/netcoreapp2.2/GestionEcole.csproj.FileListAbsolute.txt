@@ -1,0 +1,7 @@
+C:\Users\KURTIS\GestionEcole\obj\Debug\netcoreapp2.2\GestionEcole.csproj.AssemblyReference.cache
+C:\Users\KURTIS\GestionEcole\obj\Debug\netcoreapp2.2\GestionEcole.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KURTIS\GestionEcole\obj\Debug\netcoreapp2.2\GestionEcole.AssemblyInfoInputs.cache
+C:\Users\KURTIS\GestionEcole\obj\Debug\netcoreapp2.2\GestionEcole.AssemblyInfo.cs
+C:\Users\KURTIS\GestionEcole\obj\Debug\netcoreapp2.2\GestionEcole.csproj.CoreCompileInputs.cache
+C:\Users\KURTIS\GestionEcole\obj\Debug\netcoreapp2.2\GestionEcole.RazorAssemblyInfo.cache
+C:\Users\KURTIS\GestionEcole\obj\Debug\netcoreapp2.2\GestionEcole.RazorAssemblyInfo.cs

@@ -1,0 +1,44 @@
+public class CoursController : Controller
+{
+    private readonly SchoolContext _context;
+
+    public CoursController(SchoolContext context)
+    {
+        _context = context;
+    }
+
+    // Afficher la liste des cours
+    public IActionResult Index()
+    {
+        var cours = _context.Cours.Include(c => c.Professeur)
+                                  .Include(c => c.ClasseCours)
+                                  .ThenInclude(cc => cc.Classe)
+                                  .ToList();
+        return View(cours);
+    }
+
+    // Afficher les absences d'un cours
+    public IActionResult Absences(int id)
+    {
+        var cours = _context.Cours.Include(c => c.Absences)
+                                  .ThenInclude(a => a.Etudiant)
+                                  .FirstOrDefault(c => c.CoursID == id);
+        return View(cours);
+    }
+
+    // Ajouter une absence pour un étudiant dans un cours
+    [HttpPost]
+    public IActionResult AddAbsence(int coursId, int etudiantId)
+    {
+        var absence = new Absence
+        {
+            CoursID = coursId,
+            EtudiantID = etudiantId,
+            DateAbsence = DateTime.Now
+        };
+
+        _context.Absences.Add(absence);
+        _context.SaveChanges();
+        return RedirectToAction("Absences", new { id = coursId });
+    }
+}
