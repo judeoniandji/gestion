@@ -5,3 +5,4 @@ C:\Users\KURTIS\GestionEcole\obj\Debug\netcoreapp2.2\GestionEcole.AssemblyInfo.c
 C:\Users\KURTIS\GestionEcole\obj\Debug\netcoreapp2.2\GestionEcole.csproj.CoreCompileInputs.cache
 C:\Users\KURTIS\GestionEcole\obj\Debug\netcoreapp2.2\GestionEcole.RazorAssemblyInfo.cache
 C:\Users\KURTIS\GestionEcole\obj\Debug\netcoreapp2.2\GestionEcole.RazorAssemblyInfo.cs
+C:\Users\KURTIS\GestionEcole\obj\Debug\netcoreapp2.2\GestionEcole.sourcelink.json
